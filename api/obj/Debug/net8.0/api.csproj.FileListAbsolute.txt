@@ -31,3 +31,12 @@ D:\netcore\api\obj\Debug\net8.0\refint\api.dll
 D:\netcore\api\obj\Debug\net8.0\api.pdb
 D:\netcore\api\obj\Debug\net8.0\api.genruntimeconfig.cache
 D:\netcore\api\obj\Debug\net8.0\ref\api.dll
+D:\netcore\api\obj\Debug\net8.0\api.sourcelink.json
+D:\netcore\api\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\netcore\api\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\netcore\api\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\netcore\api\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\netcore\api\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\netcore\api\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\netcore\api\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
+D:\netcore\api\bin\Debug\net8.0\Serilog.dll

@@ -1,6 +1,6 @@
-﻿using static LMSApi.Enums.ApiEnums;
+﻿using static api.Enums.ApiEnums;
 
-namespace LMSApi.Entities.Bases
+namespace api.Entities.Bases
 {
     public class BaseEntity<TId>
     {

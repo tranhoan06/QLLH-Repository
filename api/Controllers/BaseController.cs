@@ -85,7 +85,7 @@ namespace api.Controllers
                 type = int.Parse(identity.Claims.Where(c => c.Type == "Type").Select(c => c.Value).SingleOrDefault() ?? "9999"),
                 Token = Request.Headers[HeaderNames.Authorization]
             };
-            if(userClaims == null)
+            if (userClaims == null)
             {
                 throw new BadRequestException(MessageResource.INVALID);
             }
@@ -96,7 +96,7 @@ namespace api.Controllers
             responseApi.data = userClaims;
             if (userClaims.userId != 8 && !string.IsNullOrEmpty(functionCode) && !CheckRoleService.CheckRoleByCode(userClaims.access_key, functionCode, type))
             {
-                if(type == (int)ApiEnums.Action.VIEW)
+                if (type == (int)ApiEnums.Action.VIEW)
                     throw new CommonException(MessageResource.NOPERMISION_VIEW_MESSAGE, ApiConstants.StatusCode.NoPermision);
                 else if (type == (int)ApiEnums.Action.CREATE)
                     throw new CommonException(MessageResource.NOPERMISION_CREATE_MESSAGE, 222);
@@ -194,11 +194,7 @@ namespace api.Controllers
             return new Output<T>
             {
                 data = data,
-                meta = new Meta
-                {
-                    error_code = code,
-                    error_message = msg
-                },
+                meta = new Meta { status_code = code, status_message = msg },
                 metadata = metadata
             };
         }

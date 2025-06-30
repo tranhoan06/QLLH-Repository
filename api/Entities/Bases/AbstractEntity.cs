@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
-using LMSApi.Entities.Bases;
 
 namespace api.Entities.Bases
 {

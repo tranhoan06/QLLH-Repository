@@ -14,15 +14,13 @@ namespace api.Models.Common
         {
             meta = new Meta();
             data = null;
-            metadata = null;
         }
 
         public DefaultResponse Success(object data)
         {
             this.data = data;
-            this.metadata = null;
-            this.meta.error_code = StatusCode.Success200;
-            this.meta.error_message = MessageResource.ACCTION_SUCCESS;
+            this.meta.status_code = StatusCode.Success200;
+            this.meta.status_message = MessageResource.ACCTION_SUCCESS;
 
             return this;
         }
@@ -31,8 +29,8 @@ namespace api.Models.Common
         {
             this.data = data;
             this.metadata = null;
-            this.meta.error_code = code;
-            this.meta.error_message = MessageResource.ACCTION_SUCCESS;
+            this.meta.status_code = code;
+            this.meta.status_message = MessageResource.ACCTION_SUCCESS;
 
             return this;
         }
@@ -41,8 +39,8 @@ namespace api.Models.Common
         {
             this.data = data;
             this.metadata = null;
-            this.meta.error_code = StatusCode.Success200;
-            this.meta.error_message = msg;
+            this.meta.status_code = StatusCode.Success200;
+            this.meta.status_message = msg;
 
             return this;
         }
@@ -51,8 +49,8 @@ namespace api.Models.Common
         {
             this.data = data;
             this.metadata = null;
-            this.meta.error_code = code;
-            this.meta.error_message = msg;
+            this.meta.status_code = code;
+            this.meta.status_message = msg;
 
             return this;
         }
@@ -61,8 +59,8 @@ namespace api.Models.Common
         {
             this.data = data;
             this.metadata = metadata;
-            this.meta.error_code = code;
-            this.meta.error_message = msg;
+            this.meta.status_code = code;
+            this.meta.status_message = msg;
 
             return this;
         }
@@ -71,16 +69,16 @@ namespace api.Models.Common
         {
             this.data = data;
             this.metadata = count;
-            this.meta.error_code = code;
-            this.meta.error_message = msg;
+            this.meta.status_code = code;
+            this.meta.status_message = msg;
 
             return this;
         }
 
         public DefaultResponse Error(string msg)
         {
-            meta.error_code = -500;
-            meta.error_message = msg;
+            meta.status_code = -500;
+            meta.status_message = msg;
             data = null;
 
             return this;
@@ -90,8 +88,8 @@ namespace api.Models.Common
         {
             this.data = null;
             this.metadata = null;
-            this.meta.error_code = code;
-            this.meta.error_message = msg;
+            this.meta.status_code = code;
+            this.meta.status_message = msg;
 
             return this;
         }
@@ -103,19 +101,19 @@ namespace api.Models.Common
 
     public class Meta
     {
-        public int error_code { get; set; }
-        public string error_message { get; set; }
+        public int status_code { get; set; }
+        public string status_message { get; set; }
 
         public Meta()
         {
-            error_code = 200;
-            error_message = string.Empty;
+            status_code = 200;
+            status_message = string.Empty;
         }
 
         public Meta(int errorCode, string errorMessage)
         {
-            error_code = errorCode;
-            error_message = errorMessage;
+            status_code = errorCode;
+            status_message = errorMessage;
         }
     }
 

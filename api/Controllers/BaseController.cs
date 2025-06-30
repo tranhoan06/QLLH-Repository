@@ -4,15 +4,15 @@ using Microsoft.AspNetCore.Mvc;
 using System.Text.Json;
 using System.Security.Claims;
 using Microsoft.Net.Http.Headers;
-using LMSApi.Exceptions;
-using static LMSApi.Constants.ApiConstants;
-using LMSApi.Enums;
-using LMSApi.Constants;
-using LMSApi.Models.Common;
-using LMSApi.Services.Common;
-using LMSApi.Models.ViewModels.Bases;
+using api.Exceptions;
+using static api.Constants.ApiConstants;
+using api.Enums;
+using api.Constants;
+using api.Models.Common;
+using api.Services.Common;
+using api.Models.ViewModels.Bases;
 
-namespace LMSApi.Controllers
+namespace api.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]

@@ -1,0 +1,38 @@
+[
+  {
+    "userId": 1,
+    "username": "admin",
+    "password": "123456admin",
+    "token": "admintoken001",
+    "fullname": "System Administrator",
+    "email": "admin@example.com",
+    "role": "admin"
+  },
+  {
+    "userId": 2,
+    "username": "johndoe",
+    "password": "123456J",
+    "token": "token_johndoe",
+    "fullname": "John Doe",
+    "email": "johndoe@example.com",
+    "role": "user"
+  },
+  {
+    "userId": 3,
+    "username": "janesmith",
+    "password": "password789jane",
+    "token": "token_janesmith",
+    "fullname": "Jane Smith",
+    "email": "janesmith@example.com",
+    "role": "user"
+  },
+  {
+    "userId": 4,
+    "username": "michaelbrown",
+    "password": "pass123mic",
+    "token": "token_michaelbrown",
+    "fullname": "Michael Brown",
+    "email": "michaelbrown@example.com",
+    "role": "user"
+  }
+]

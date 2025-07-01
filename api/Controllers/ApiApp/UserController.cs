@@ -6,6 +6,7 @@ using api.Models.ViewModels;
 using api.Controllers;
 using api.Models.Common;
 using api.Persistence;
+using Microsoft.AspNetCore.Authorization;
 namespace MyApp.Namespace
 {
     [Route("api/[controller]")]
@@ -24,6 +25,7 @@ namespace MyApp.Namespace
         }
 
         [HttpPost("login")]
+        [AllowAnonymous]
         public async Task<ActionResult> Login([FromBody] LoginModel loginModel)
         {
             DefaultResponse def = new DefaultResponse();

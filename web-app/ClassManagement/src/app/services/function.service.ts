@@ -1,12 +1,41 @@
 import { Injectable } from '@angular/core';
-import * as fakeFunction from '../shared/data/fakeFunction.json';
+// import * as fakeFunction from '../shared/data/fakeFunction.json';
 
 @Injectable({ providedIn: 'root' })
 export class FunctionService {
-  private functions = fakeFunction;
+  fakeFunction: any = [
+    {
+      "userId": 1,
+      "functions": [
+        { "icon": "dashboard", "label": "Trang chủ", "route": "/dashboard" },
+        { "icon": "group", "label": "Quản lý lớp", "route": "/class-management" },
+        { "icon": "person", "label": "Quản lý học sinh", "route": "/student-management" },
+        { "icon": "event", "label": "Lịch học", "route": "/schedule" },
+        { "icon": "assignment", "label": "Báo cáo", "route": "/report" },
+        { "icon": "settings", "label": "Cài đặt", "route": "/settings" }
+      ]
+    },
+    {
+      "userId": 2,
+      "functions": [
+        { "icon": "dashboard", "label": "Trang chủ", "route": "/dashboard" },
+        { "icon": "event", "label": "Lịch học", "route": "/schedule" },
+        { "icon": "assignment", "label": "Báo cáo", "route": "/report" }
+      ]
+    },
+    {
+      "userId": 3,
+      "functions": [
+        { "icon": "dashboard", "label": "Trang chủ", "route": "/dashboard" },
+        { "icon": "group", "label": "Quản lý lớp", "route": "/class-management" }
+      ]
+    }
+  ];
+
+  private functions = this.fakeFunction;
 
   getFunctionsByUserId(userId: number) {
     const found = this.functions.find((f: any) => f.userId === userId);
     return found ? found.functions : [];
-  }     
+  }
 }

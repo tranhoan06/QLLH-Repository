@@ -1,2 +1,5 @@
 /api/bin
 /api/obj
+/web-app/ClassManagement/node_modules
+/web-app/ClassManagement/dist
+/web-app/ClassManagement/.angular

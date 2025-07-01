@@ -1,0 +1,28 @@
+[
+  {
+    "userId": 1,
+    "functions": [
+      { "icon": "dashboard", "label": "Trang chủ", "route": "/dashboard" },
+      { "icon": "group", "label": "Quản lý lớp", "route": "/class-management" },
+      { "icon": "person", "label": "Quản lý học sinh", "route": "/student-management" },
+      { "icon": "event", "label": "Lịch học", "route": "/schedule" },
+      { "icon": "assignment", "label": "Báo cáo", "route": "/report" },
+      { "icon": "settings", "label": "Cài đặt", "route": "/settings" }
+    ]
+  },
+  {
+    "userId": 2,
+    "functions": [
+      { "icon": "dashboard", "label": "Trang chủ", "route": "/dashboard" },
+      { "icon": "event", "label": "Lịch học", "route": "/schedule" },
+      { "icon": "assignment", "label": "Báo cáo", "route": "/report" }
+    ]
+  },
+  {
+    "userId": 3,
+    "functions": [
+      { "icon": "dashboard", "label": "Trang chủ", "route": "/dashboard" },
+      { "icon": "group", "label": "Quản lý lớp", "route": "/class-management" }
+    ]
+  }
+]

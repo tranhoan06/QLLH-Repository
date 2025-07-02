@@ -5,7 +5,13 @@
     </mat-card-header>
     <mat-card-content>
       <p>Chào mừng bạn đến với trang Dashboard!</p>
-      <!-- Thêm các widget, biểu đồ, thông tin tổng quan tại đây -->
+      <div style="margin-top: 32px;">
+        <app-bar-chart
+          [barChartData]="barChartData"
+          [barChartLabels]="barChartLabels"
+          [barChartType]="barChartType" 
+        ></app-bar-chart>
+      </div>
     </mat-card-content>
   </mat-card>
 </div>
